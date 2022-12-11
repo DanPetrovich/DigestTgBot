@@ -12,7 +12,12 @@ sports = {'Футбол': 'https://t.me/rflive',
           'Баскетбол': 'https://t.me/all_about_nba',
           'Хоккей': 'https://t.me/khl_official_telegram',
           'Волейбол': 'https://t.me/volleyVFV',
-          'Большой теннис': 'https://t.me/elitetennis'}
+          'Большой теннис': 'https://t.me/elitetennis',
+          'Гандбол': 'https://t.me/rushandball',
+          'Мини-футбол': 'https://t.me/futsal_rus',
+          'UFC': 'https://t.me/UFCRussia',
+          'Бокс': 'https://t.me/rcc_sport',
+          'Регби': 'https://t.me/rugbyrussian'}
 
 
 @bot.message_handler(commands=['start'])
@@ -76,6 +81,21 @@ def button_message(message):
         output = sports[message.text]
         bot.send_message(message.chat.id, output, parse_mode='html')  # TODO
     elif message.text == 'Большой теннис':
+        output = sports[message.text]
+        bot.send_message(message.chat.id, output, parse_mode='html')  # TODO
+    elif message.text == 'Гандбол':
+        output = sports[message.text]
+        bot.send_message(message.chat.id, output, parse_mode='html')  # TODO
+    elif message.text == 'Мини-футбол':
+        output = sports[message.text]
+        bot.send_message(message.chat.id, output, parse_mode='html')  # TODO
+    elif message.text == 'UFC':
+        output = sports[message.text]
+        bot.send_message(message.chat.id, output, parse_mode='html')  # TODO
+    elif message.text == 'Бокс':
+        output = sports[message.text]
+        bot.send_message(message.chat.id, output, parse_mode='html')  # TODO
+    elif message.text == 'Регби':
         output = sports[message.text]
         bot.send_message(message.chat.id, output, parse_mode='html')  # TODO
     else:
